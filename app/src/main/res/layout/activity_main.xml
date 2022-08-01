@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33EEEEEE">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9933FA"></ImageView>
+
+        <ImageView
+            android:id="@+id/iv_music_bottom"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/notes"></ImageView>
+
+
+        <TextView
+            android:id="@+id/tv_music_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_music_bottom_back"
+            android:layout_toRightOf="@+id/iv_music_bottom"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="告白氣球"></TextView>
+
+        <ImageView
+            android:id="@+id/iv_music_bottom_next"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/next"></ImageView>
+
+        <ImageView
+            android:id="@+id/iv_music_bottom_play"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv_music_bottom_next"
+            android:src="@mipmap/play"></ImageView>
+
+        <ImageView
+            android:id="@+id/iv_music_bottom_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv_music_bottom_play"
+            android:src="@mipmap/previous"></ImageView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
