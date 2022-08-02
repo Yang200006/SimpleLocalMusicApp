@@ -1,4 +1,3 @@
-# SimpleLocalMusicApp
 # 簡易本地音樂撥放器
 
 <h3>功能介紹</h3>
